@@ -17,5 +17,5 @@ WeatherWise is a weather forecast project developed by a team of students for th
 To get started with WeatherWise, simply clone the repository and open the `main.html` file in your web browser.
 
 ```bash
-git clone <repository_url>
+git clone <https://github.com/shoibk897/WeatherWise.git>
 cd WeatherWise
