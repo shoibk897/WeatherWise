@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  .background {
+    width: 8vh;
+  }
+  .icon img {
+    height: 55px;
+  }
+  .icon p {
+    font-size: 0.85rem;
+    top: -5px;
+    font-weight: bold;
+    word-wrap: break-word;
+    width: 64px;
+    text-align: center;
+  }
+  .main-dashboard-header-content {
+    padding-top: 0.5rem;
+    width: 105%;
+  }
+  .today {
+    top: -8px;
+  }
+  .dashboard-search {
+    width: 75%;
+  }
+  .dashboard-search-bar{
+    width: 100%;
+  }
+  .greet{
+    margin-bottom: 0.5rem;
+  }
+  .greet-txt{
+    font-size: 1.05rem !important;
+  }
+  .greet-user{
+    font-size: 1.1rem !important;
+  }
+}

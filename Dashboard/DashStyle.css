@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth !important;
+  list-style: none;
+  text-decoration: none !important;
+  color: white;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* DASHBOARD SIDEBAR  */
+.side-bar {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+.side-bar-main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.163);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(100px);
+  border-radius: 30px !important;
+}
+.icon img {
+  height: 90px;
+}
+.icon p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  position: relative;
+  top: -10px;
+}
+.side-items ul li {
+  width: 100%;
+  height: 3.1rem;
+  display: flex;
+  padding-left: 24px;
+  opacity: 0.8;
+  gap: 10px;
+  font-size: 1rem;
+}
+.side-items ul li a {
+  gap: 10px;
+  font-size: 1rem;
+}
+.side-items ul li.active {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    99deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  border-left: 2px solid rgb(255, 255, 255);
+  opacity: 1;
+}
+.side-log {
+  height: 4rem;
+}
+.side-log:hover {
+  background: rgba(255, 255, 255, 0.101);
+  backdrop-filter: blur(200px);
+}
+.side-log-in-out {
+  font-size: 1rem;
+  gap: 8px;
+}
+.btn-custom:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* ----> background */
+.background {
+  position: absolute;
+  height: 90vh;
+  width: 10vh;
+  overflow: hidden;
+  border-radius: 30px !important;
+}
+.box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+.b1 {
+  background-color: #2c4d57;
+  top: -5%;
+  left: -10%;
+}
+.b2 {
+  background-color: blue;
+  top: 10%;
+  left: 35%;
+}
+.b3 {
+  background-color: #3fa9c0;
+  top: 30%;
+  left: 10%;
+}
+.b4 {
+  background-color: #4d4a29;
+  top: 60%;
+  left: 10%;
+}
+.b5 {
+  background-color: orange;
+  top: 80%;
+  left: 30%;
+}
+.b6 {
+  background-color: blue;
+  top: 85%;
+  left: 37%;
+}
+
+/* DASHBOARD SIDEBAR END */
+
+/* DASHBOARD MAIN  */
+
+.main {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+.main-dashboard {
+  height: 100%;
+  position: relative;
+}
+.main-dashboard-header {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+.dashboard {
+  border-radius: 30px !important;
+}
+.dash {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.d1 {
+  background-color: #2c4d57;
+  top: -29%;
+  left: 2%;
+}
+.d2 {
+  background-color: blue;
+  top: 37%;
+  left: 14%;
+}
+.d3 {
+  background-color: #3fa9c0;
+  top: -17%;
+  left: 30%;
+}
+.d4 {
+  background-color: #4d4a29;
+  top: 25%;
+  left: 58%;
+}
+.d5 {
+  background-color: orange;
+  top: -36%;
+  left: 74%;
+}
+.d6 {
+  background-color: blue;
+  top: 11%;
+  left: 88%;
+}
+.main-dashboard-header-content {
+  height: 100%;
+  width: calc(100% + 2%);
+  position: relative;
+  background: rgba(255, 255, 255, 0.163);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(100px);
+}
+.time {
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+}
+.today {
+  position: relative;
+  top: -10px;
+  left: 3px;
+}
+.dashboard-search-bar{
+    background: rgba(0, 0, 0, 0.163);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(100px);
+  border-radius: 40px;
+  padding:10px 15px;
+  gap:15px;
+  width: 97%;
+}
+.dashboard-search{
+    width: 90%;
+    font-size: 1.5rem;
+    color: white;
+    outline: none ;
+    border: none;
+    background: none;
+}
+.greet{
+    gap:5px;
+    font-family: "Montserrat", sans-serif;
+}
+.greet-img{
+    position: relative;
+}
+.greet-img img {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-map {
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+}
+.main-calender {
+  height: 100%;
+  background-color: rgb(64, 0, 255);
+}
+.main-settings {
+  height: 100%;
+  background-color: rgb(136, 255, 0);
+}
