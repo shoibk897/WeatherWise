@@ -1,3 +1,17 @@
+/* FOR TABLETs */
+
+@media (max-width: 980px) {
+  .weather-info-card-temp{
+    font-size: 2.8rem;
+  }
+  .weather-info-card-temp-img{
+    height: 70px;
+  }
+}
+
+
+/* FOR MOBILE PHONES */
+
 @media (max-width: 768px) {
   .background {
     width: 8vh;
@@ -25,6 +39,7 @@
   }
   .dashboard-search-bar{
     width: 100%;
+    border-radius: 20px;
   }
   .greet{
     margin-bottom: 0.5rem;
@@ -32,7 +47,13 @@
   .greet-txt{
     font-size: 1.05rem !important;
   }
-  .greet-user{
-    font-size: 1.1rem !important;
+  .weather-info-card-temp{
+    font-size: 2.8rem;
+  }
+  .tab{
+    overflow-y: scroll;
+  }
+  .weather-graph{
+    padding-left: 2rem;
   }
 }

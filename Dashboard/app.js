@@ -22,19 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
 //   FOR TAB FUNCTIONALITY
 function openTab(tabName) {
 
-    var tabs = document.querySelectorAll('.tab');
+    let tabs = document.querySelectorAll('.tab');
     tabs.forEach(function (tab) {
         tab.style.display = 'none';
     });
 
-    var selectedTab = document.querySelector('.' + tabName);
+    let selectedTab = document.querySelector('.' + tabName);
     selectedTab.style.display = 'block';
 
-    localStorage.setItem('lastTab', tabName);
-}
+    localStorage.setItem('lastTab', tabName)
 
 document.addEventListener('DOMContentLoaded', function () {
-    var lastTab = localStorage.getItem('lastTab');
+    let lastTab = localStorage.getItem('lastTab');
     if (lastTab) {
         openTab(lastTab);
     } else {
@@ -45,68 +44,90 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // TIME FUNCTION
 function updateTime() {
-    var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
+    let now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
 
-    var meridiem = hours >= 12 ? 'PM' : 'AM';
+    let meridiem = hours >= 12 ? 'PM' : 'AM';
 
     hours = hours % 12;
     hours = hours ? hours : 12;
     hours = hours < 10 ? '0' + hours : hours;
     minutes = minutes < 10 ? '0' + minutes : minutes;
 
-    var currentTime = hours + ' : ' + minutes + ' ' + meridiem;
-    document.getElementById('current-time').textContent = currentTime;
+    let currentTime = hours + ' : ' + minutes + ' ' + meridiem;
+    
+    document.querySelectorAll('.current-time').forEach(elem => elem.textContent = currentTime);
 }
+
 setInterval(updateTime, 60000);
 updateTime();
 
+
 // FOR {WEEK,DATE,MONTH,YEAR}
 function updateDateInfo() {
+    let now = new Date();
+    let weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-    var now = new Date();
-    var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let weekday = weekdays[now.getDay()];
+    let month = months[now.getMonth()];
+    let date = now.getDate();
+    let year = now.getFullYear();
 
-    var weekday = weekdays[now.getDay()];
-    var month = months[now.getMonth()];
-    var date = now.getDate();
-    var year = now.getFullYear();
-
-    document.getElementById('week').textContent = weekday;
-    document.getElementById('date').textContent = date;
-    document.getElementById('month').textContent = month;
-    document.getElementById('year').textContent = year;
+    document.querySelectorAll('.weekday').forEach(elem => elem.textContent = weekday);
+    document.querySelectorAll('.date').forEach(elem => elem.textContent = date);
+    document.querySelectorAll('.month').forEach(elem => elem.textContent = month);
+    document.querySelectorAll('.year').forEach(elem => elem.textContent = year);
 }
+
 updateDateInfo();
 
-// FOR GREETING (GOOD MORINING/EVENING/NIGHT)
-document.addEventListener("DOMContentLoaded", function() {
-    var now = new Date();
-    var hour = now.getHours();
 
-    var images = document.querySelectorAll('.greet-img img');
-    var greetingText = document.querySelector('.greet-txt');
+// FOR GREETING (GOOD MORINING/AFTERNOON/NIGHT)
+document.addEventListener("DOMContentLoaded", function () {
+    let now = new Date();
+    let hour = now.getHours();
+
+    let images = document.querySelectorAll('.greet-img img');let greetingText = document.querySelector('.greet-txt');
 
     function hideImages() {
-        images.forEach(function(image) {
+        images.forEach(function (image) {
             image.style.display = 'none';
         });
     }
 
     if (hour >= 6 && hour < 12) {
-        greetingText.textContent = 'Good Morning,';
+        greetingText.textContent = 'Good Morning';
         hideImages();
-        images[0].style.display = 'inline-block'; 
+        images[0].style.display = 'inline-block';
     } else if (hour >= 12 && hour < 18) {
-        greetingText.textContent = 'Good Afternoon,';
+        greetingText.textContent = 'Good Afternoon';
         hideImages();
         images[1].style.display = 'inline-block';
-    } else {
-        greetingText.textContent = 'Good Night,';
+    } else if (hour >= 18 && hour < 22) {
+        greetingText.textContent = 'Good Evening';
         hideImages();
         images[2].style.display = 'inline-block';
+    } else {
+        greetingText.textContent = 'Good Night';
+        hideImages();
+        images[3].style.display = 'inline-block';
     }
 });
 
+
+// WEATHER INFO CARD
+let currentTime = new Date().getHours();
+let dayFrame = document.querySelector('.weather-info-day');
+let nightFrame = document.querySelector('.weather-info-night');
+
+if (currentTime >= 6 && currentTime < 18) {
+    dayFrame.style.display = 'block';
+    nightFrame.style.display = 'none';
+} else {
+    dayFrame.style.display = 'none';
+    nightFrame.style.display = 'block';
+}
+
+}
