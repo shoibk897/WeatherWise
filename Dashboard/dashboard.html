@@ -46,7 +46,7 @@
                                 <li id="tab1" onclick="openTab('main-dashboard')"
                                     class="d-flex justify-content-start align-items-center">
                                     <img src="icons/dashboardicon.svg" height="25px" alt="dashboardicon">
-                                    <span class="d-none d-lg-inline-block d-md-inline-block">DashBoard</span>
+                                    <span class="d-none d-lg-inline-block d-md-inline-block ">DashBoard</span>
                                 </li>
                                 <!-- 2.MAP -->
                                 <li id="tab2" onclick="openTab('main-map')"
@@ -75,7 +75,8 @@
                             <button type="button"
                                 class="side-log-in-out btn btn-custom  ps-lg-0 ps-md-0 d-flex justify-content-center align-items-center">
                                 <img src="icons/logOutIcon.svg" height="30px" alt="logInOutIcon">
-                                <a href="/main.html" class="d-none d-lg-inline-block d-md-inline-block">DashBoard</a>
+                                <a href="/main.html"
+                                    class="d-none d-lg-inline-block text-light d-md-inline-block">LogOut</a>
                             </button>
                         </div>
                     </div>
@@ -88,7 +89,7 @@
             <!-- DASHBOARD - MAIN -->
             <div class="main col-9 col-lg-10 ps-0 pe-2 pt-2 pb-3">
                 <!-- DASHBOARD TAB -->
-                <div class="tab main-dashboard container-fluid ms-0 me-1 ps-1 pe-1 mt-1 ">
+                <div class="tab main-dashboard container-fluid overflow-md-scroll ms-0 me-1 ps-1 pe-1 mt-1 ">
                     <!-- Dashboard header -->
                     <div class="main-dashboard-header p-0">
                         <!-- Header background -->
@@ -118,7 +119,8 @@
                                 class="main-dashboard-search col-lg-6 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                                 <div class="dashboard-search-bar  d-flex align-items-center justify-content-start ">
                                     <img src="icons/search.svg" height="28px" alt="">
-                                    <input id="search-weather" class="dashboard-search" type="text" name="" id="weather-search">
+                                    <input id="search-weather" class="dashboard-search" type="text" name=""
+                                        id="weather-search">
                                 </div>
                             </div>
 
@@ -129,7 +131,7 @@
                                     <img src="icons/evening.svg" height="30px" alt="">
                                     <img src="icons/moon.svg" height="25px" alt="">
                                 </div>
-                                <div class="greet-txt fs-5">Good Morning</div>
+                                <div class="greet-txt fs-5"> Greetings</div>
                             </div>
                         </div>
                     </div>
@@ -137,7 +139,7 @@
                     <!-- Dashboard main -->
                     <div class="main-dashboard-content p-0 ">
                         <div class="row">
-                            <div class="col-md-4 mt-2 pt-1 ">
+                            <div class="col-lg-4 mt-2 pt-1 ">
                                 <div class="weather-info-card">
                                     <div class="bg-winfocard">
                                         <span class="winfo-box wi1"></span>
@@ -157,56 +159,357 @@
                                         <div
                                             class="weather-info-card-ani d-flex align-items-center justify-content-center gap-4 pt-1">
                                             <div class=" p-0">
-                                                <img src="icons/weather_info_ani2.gif" class="weather-info-day weather-info-card-temp-img"
-                                                    height="80px" alt="">
-                                                <img src="icons/weather_info_ani2.gif" class="weather-info-night weather-info-card-temp-img"
-                                                    height="80px" alt="">
+                                                <img src="icons/weather_info_ani2.gif"
+                                                    class="weather-info-day weather-info-card-temp-img" height="80px"
+                                                    alt="">
+                                                <img src="icons/weather_info_ani2.gif"
+                                                    class="weather-info-night weather-info-card-temp-img" height="80px"
+                                                    alt="">
                                             </div>
-                                            <div class="weather-info-card-temp p-0 ">27<sup>o</sup>C</div>
+                                            <div class="weather-info-card-temp p-0 ">27<span>°C</span></div>
                                         </div>
                                         <hr class="m-2 mb-3 ms-4 me-4 mt-1">
                                         <div
-                                            class="mb-3 contianer-fluid p-0 ">
-                                            <div class="ps-3 ms-2 d-flex justify-content-start align-items-center gap-1">
-                                                <img src="icons/wind.svg" height="25px" alt="">
-                                                <div>Wind | </div>
-
-                                                <div class="wind-speed"> 28 km/hr</div>
+                                            class="mb-3 contianer-fluid p-0 d-flex align-items-center justify-content-center pe-4 gap-4 ">
+                                            <div
+                                                class="ps-1 ms-2 d-flex justify-content-start align-items-center gap-2">
+                                                <img src="icons/wind.svg" height="50px" alt="">
+                                                <div>
+                                                    <div class="wind-speed fs-4"> 28 km/h</div>
+                                                    <div class="fs-6">Wind Speed</div>
+                                                </div>
                                             </div>
-                                            <div class="ps-3 ms-2 d-flex justify-content-start align-items-center gap-1 mt-2">
-                                                <img src="icons/humidity.svg" height="25px" alt="">
-                                                <div>Hum |</div>
-                                                <div class="wind-speed">28%</div>
+                                            <div
+                                                class="ps-1 ms-2 d-flex justify-content-start align-items-center gap-2 mt-2">
+                                                <img src="icons/humidity.svg" height="56px" alt="">
+                                                <div>
+                                                    <div class="wind-speed fs-4">28%</div>
+                                                    <div class="fs-6">Humidity</div>
+                                                </div>
                                             </div>
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 mt-2 pt-1 ps-md-0 ms-0">
-                                <div class="weather-graph container-fluid p-0 m-0">
-                                    <div class="graph-h m-0 p-0">
-                                        <span class="graph g1"></span>
-                                        <span class="graph g2"></span>
-                                        <span class="graph g3"></span>
-                                        <span class="graph g4"></span>
-                                        <span class="graph g5"></span>
-                                        <span class="graph g6"></span>
-                                        <span class="graph g7"></span>
-                                        <span class="graph g8"></span>
-                                        <span class="graph g9"></span>
-                                    </div>  
+                            <div class="col-lg-8 mt-2 pt-1 ps-md-0 ms-0">
+                                <div class="weather-future container-fluid p-0 m-0">
+                                    <div class="future-h m-0 p-0">
+                                        <span class="future f1"></span>
+                                        <span class="future f2"></span>
+                                        <span class="future f3"></span>
+                                        <span class="future f4"></span>
+                                        <span class="future f5"></span>
+                                        <span class="future f6"></span>
+                                        <span class="future f7"></span>
+                                        <span class="future f8"></span>
+                                        <span class="future f9"></span>
+                                    </div>
 
-                                    <div class="weather-graph-content container-fluid  ">
-                                        <div class="row">
-                                            <div class="col-md-6 weather-graph-one container-fluid ">
-                                               <div class="weather-graph-one-content">
-                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, fugiat consequatur ipsa numquam nam id repellendus atque officia vel! In incidunt, aperiam earum, animi iusto deserunt reprehenderit quis at vitae omnis aliquam beatae aliquid nesciunt rerum illum? Soluta inventore odit eaque excepturi saepe quod assumenda maiores recusandae animi. Veritatis recusandae magnam nisi ex explicabo ipsa.
-                                               </div>
+                                    <div
+                                        class="weather-future-content d-flex justify-content-center align-items-center container-fluid p-0  ">
+                                        <div
+                                            class="weather-future-content-in d-flex align-items-center justify-content-center gap-1 pt-1  pb-1">
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-one">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-md-6 weather-graph-two container-fluid ">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero soluta inventore reprehenderit pariatur ipsum repellat et cum maxime quam, similique nobis nemo hic culpa officiis facilis. Nisi, quis voluptatum quisquam ex ratione enim dolor eligendi tenetur explicabo labore velit quaerat odio optio vero quo accusantium fuga blanditiis nemo numquam eos. Laudantium, expedita unde? Soluta ab repellendus, perferendis voluptas tempora culpa.
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-two">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-three">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-four">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-five">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="future-day p-3 pt-2 pb-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div class="fs-4">
+                                                    <span class="date-six">date</span>
+                                                    <span class="month fs-5">Month</span>
+                                                </div>
+                                                <div>
+                                                    <img src="images/clear.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/rain.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/snow.png" height="70px" alt="">
+                                                    <img class="d-none" src="images/cloud.png" height="70px" alt="">
+                                                </div>
+                                                <div class="fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div>
+                                                        <div><img src="icons/wind.svg" height="30px" alt=""></div>
+                                                        <div><img src="icons/humidity.svg" height="30px" alt=""></div>
+                                                    </div>
+                                                    <div>
+                                                        <div>24 km/h</div>
+                                                        <div>34%</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7 mt-2 pt-1 ">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="container fluid">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mt-2 pt-1">
+                                <div class="weather-custom-city contianer-fluid p-0">
+                                    <div class="custom-h m-0 p-0">
+                                        <span class="custom c1"></span>
+                                        <span class="custom c2"></span>
+                                        <span class="custom c3"></span>
+                                        <span class="custom c4"></span>
+                                        <span class="custom c5"></span>
+                                        <span class="custom c6"></span>
+                                        <span class="custom c7"></span>
+                                        <span class="custom c8"></span>
+                                        <span class="custom c9"></span>
+                                    </div>
+                                    <div class="weather-custom-city-content p-3">
+                                        <div class="search-box container-fluid p-0">
+                                            <img class="custome-btn-search " src="icons/search.svg" height="30px">
+                                            <input type="text" class="custom-city-search" placeholder="">
+                                        </div>
+                                        <div class="weather-other-city container-fluid p-0 pt-2 ">
+
+                                            <!-- <div class="weather-custom-city container-fluid p-2 d-flex justify-content-between align-items-center mb-2">
+                                                <div class="container-fluid p-0 d-flex flex-column">
+                                                    <div class="d-flex align-items-center justify-content-center gap-1 ">
+                                                        <img src="icons/location.svg" height="20px" alt="">
+                                                        <span class="custome-city-name container-fluid fw-bold p-0">India</span>
+                                                    </div>
+                                                    <div class="custom-wind">
+                                                        <img src="icons/wind.svg" height="20px" alt="">
+                                                        <span class="">Wind</span>
+                                                        <span class="">|</span>
+                                                        <span class="custom-city-wind">28 km/h</span>
+                                                    </div>
+                                                    <div class="custom-hum">
+                                                        <img src="icons/humidity.svg" height="20px" alt="">
+                                                        <span>Hum</span>
+                                                        <span>|</span>
+                                                        <span class="custom-city-hum">28%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-temp fs-2">27<span>°C</span></div>
+                                                <div class="custom-city-img">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-day weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-night weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="weather-custom-city container-fluid p-2 d-flex justify-content-between align-items-center mb-2">
+                                                <div class="container-fluid p-0 d-flex flex-column">
+                                                    <div class="d-flex align-items-center justify-content-center gap-1 ">
+                                                        <img src="icons/location.svg" height="20px" alt="">
+                                                        <span class="custome-city-name container-fluid fw-bold p-0">India</span>
+                                                    </div>
+                                                    <div class="custom-wind">
+                                                        <img src="icons/wind.svg" height="20px" alt="">
+                                                        <span class="">Wind</span>
+                                                        <span class="">|</span>
+                                                        <span class="custom-city-wind">28 km/h</span>
+                                                    </div>
+                                                    <div class="custom-hum">
+                                                        <img src="icons/humidity.svg" height="20px" alt="">
+                                                        <span>Hum</span>
+                                                        <span>|</span>
+                                                        <span class="custom-city-hum">28%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-temp fs-2">27<span>°C</span></div>
+                                                <div class="custom-city-img">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-day weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-night weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="weather-custom-city container-fluid p-2 d-flex justify-content-between align-items-center mb-2">
+                                                <div class="container-fluid p-0 d-flex flex-column">
+                                                    <div class="d-flex align-items-center justify-content-center gap-1 ">
+                                                        <img src="icons/location.svg" height="20px" alt="">
+                                                        <span class="custome-city-name container-fluid fw-bold p-0">India</span>
+                                                    </div>
+                                                    <div class="custom-wind">
+                                                        <img src="icons/wind.svg" height="20px" alt="">
+                                                        <span class="">Wind</span>
+                                                        <span class="">|</span>
+                                                        <span class="custom-city-wind">28 km/h</span>
+                                                    </div>
+                                                    <div class="custom-hum">
+                                                        <img src="icons/humidity.svg" height="20px" alt="">
+                                                        <span>Hum</span>
+                                                        <span>|</span>
+                                                        <span class="custom-city-hum">28%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-temp fs-2">27<span>°C</span></div>
+                                                <div class="custom-city-img">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-day weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-night weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="weather-custom-city container-fluid p-2 d-flex justify-content-between align-items-center mb-2">
+                                                <div class="container-fluid p-0 d-flex flex-column">
+                                                    <div class="d-flex align-items-center justify-content-center gap-1 ">
+                                                        <img src="icons/location.svg" height="20px" alt="">
+                                                        <span class="custome-city-name container-fluid fw-bold p-0">India</span>
+                                                    </div>
+                                                    <div class="custom-wind">
+                                                        <img src="icons/wind.svg" height="20px" alt="">
+                                                        <span class="">Wind</span>
+                                                        <span class="">|</span>
+                                                        <span class="custom-city-wind">28 km/h</span>
+                                                    </div>
+                                                    <div class="custom-hum">
+                                                        <img src="icons/humidity.svg" height="20px" alt="">
+                                                        <span>Hum</span>
+                                                        <span>|</span>
+                                                        <span class="custom-city-hum">28%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="custom-temp fs-2">27<span>°C</span></div>
+                                                <div class="custom-city-img">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-day weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                    <img src="icons/weather_info_ani2.gif"
+                                                        class="weather-info-night weather-info-card-temp-img"
+                                                        height="70px" alt="">
+                                                </div>
+                                            </div> -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -218,10 +521,14 @@
                 <!-- DASHBOARD TAB END -->
 
                 <div class="tab main-map container-fluid">
-
+                    <h1>UNDER CONSTRUCTION</h1>
                 </div>
-                <div class="tab main-calender container-fluid"></div>
-                <div class="tab main-settings container-fluid"></div>
+                <div class="tab main-calender container-fluid">
+                    <h1>UNDER CONSTRUCTION</h1>
+                </div>
+                <div class="tab main-settings container-fluid">
+                    <h1>UNDER CONSTRUCTION</h1>
+                </div>
             </div>
             <!-- DASHBOARD - MAIN -->
 

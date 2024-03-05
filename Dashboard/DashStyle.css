@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Noto+Sans+JP:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -9,6 +11,7 @@
   list-style: none;
   text-decoration: none !important;
   color: white;
+  scrollbar-width: none;
 }
 body,
 html {
@@ -19,7 +22,7 @@ html {
 
 /*  SIDEBAR  */
 .side-bar {
-  /* height: 100vh; */
+  height: 100vh;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
   position: relative;
@@ -321,89 +324,226 @@ html {
     width: auto;
 }
 
-.weather-graph {
+.weather-future {
   height: 100%;
   border-radius: 30px;
   position: relative;
   overflow: hidden;
 }
-.graph-h{
+.future-h{
   height: 100%;
   width: 100%;
   position: absolute;
 }
-.graph{
+.future{
   position: absolute;
   height: 100px;
   width: 100px;
   opacity: 0.7;
 }
-.g1 {
+.f1 {
   background-color: #00c3ff;
   top: 0%;
   left: 0%;
 }
-.g2 {
+.f2 {
   background-color: blue;
   top: 39%;
   left: 7%;
 }
-.g3 {
+.f3 {
  background-color: #00ffff;
  top: 49%;
  left: 34%
 }
-.g4 {
+.f4 {
   background-color: #f2ac2f;
   top: 13%;
   left: 14%
 }
-.g5 {
+.f5 {
   background-color: orange;
   top: 24%;
   left: 82%;
 }
-.g6 {
+.f6 {
   background-color: blue;
   top: 63%;
   left: 88%;
 }
-.g7 {
+.f7 {
   background-color: blue;
   top: 7%;
   left: 51%;
 }
-.g8 {
+.f8 {
   background-color: darkorchid;
   top: 49%;
   left: 55%;
 }
-.g9 {
+.f9 {
   background-color: #00dbff;
   top: 46%;
   left: 74%;
 }
-.weather-graph-content{
+.weather-future-content{
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.163);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(100px);
-  overflow: hidden;
+  overflow-x: auto; 
+  white-space: nowrap;
+}
+.future-day{
+  background: rgba(0, 0, 0, 0.163);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(100px);
+  border-radius: 30px;
 }
 
-.weather-graph-one{
-  height: 100%;
-  /* width: 100%; */
-  border: 1px solid white;
-  border-radius: 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weather-custom-city{
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
 }
-.weather-graph-two{
+.weather-custom-city-content{
   height: 100%;
-  /* width: 100%; */
-  border-radius: 25px;
-  border: 1px solid white;
+  width:  100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.163);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(100px);
+  position: relative;
+  z-index: 100;
 }
+.custom-h{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.custom{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  z-index: 1 ;
+}
+.c1 {
+  background-color: #00c3ff;
+  top: 3%;
+  left: 2%
+}
+.c2 {
+  background-color: blue;
+  top: 39%;
+  left: 7%;
+}
+.c3 {
+ background-color: #00ffff;
+ top: 49%;
+ left: 34%
+}
+.c4 {
+  background-color: #f2ac2f;
+  top: 13%;
+  left: 14%
+}
+.c5 {
+  background-color: orange;
+  top: 24%;
+  left: 82%;
+}
+.c6 {
+  background-color: blue;
+  top: 66%;
+  left: 83%;
+}
+.c7 {
+  background-color: blue;
+  top: 15%;
+  left: 44%;
+}
+.c8 {
+  background-color: orange;
+  top: 49%;
+  left: 55%;
+}
+.c9 {
+  background-color: #00dbff;
+  top: 46%;
+  left: 74%;
+}
+.custom-city-search{
+  width: 80%;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+}
+
+.weather-other-city{
+  width: 100%;
+  overflow-x: scroll;
+  height: 35vh;
+}
+
+.weather-custom-city{
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(400px);
+  border-radius: 20px;
+  position: relative;
+}
+.custom-temp{
+  position: relative;
+left: -20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

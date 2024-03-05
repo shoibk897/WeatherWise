@@ -7,6 +7,9 @@
   .weather-info-card-temp-img{
     height: 70px;
   }
+  .tab{
+    overflow: scroll;
+  }
 }
 
 
@@ -53,7 +56,28 @@
   .tab{
     overflow-y: scroll;
   }
-  .weather-graph{
+  .weather-future{
     padding-left: 2rem;
+  }
+  .weather-future-content-in{
+    margin-left: 35rem;
+  }
+  .future-day {
+    min-width: auto;
+  }
+  .custom-temp{
+    left: -5%;
+  }
+  .custom-wind{
+    font-size: 10px;
+  }
+  .custom-hum{
+    font-size: 10px;
+  }
+  .custom-hum img,.custom-wind img{
+    height: 15px;
+  }
+  .custom-city-img img{
+    height: 50px;
   }
 }
