@@ -169,7 +169,6 @@ let dayFrames = document.querySelectorAll(".weather-info-day");
 let nightFrames = document.querySelectorAll(".weather-info-night");
 
 if (currentTime >= 6 && currentTime < 18) {
-  // Show day frames and hide night frames
   dayFrames.forEach(function (frame) {
     frame.style.display = "block";
   });
@@ -177,7 +176,6 @@ if (currentTime >= 6 && currentTime < 18) {
     frame.style.display = "none";
   });
 } else {
-  // Show night frames and hide day frames
   dayFrames.forEach(function (frame) {
     frame.style.display = "none";
   });

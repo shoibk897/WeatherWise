@@ -13,6 +13,7 @@
   color: white;
   scrollbar-width: none;
 }
+
 body,
 html {
   height: 100%;
@@ -27,6 +28,7 @@ html {
   overflow: hidden;
   position: relative;
 }
+
 .side-bar-main {
   height: 100%;
   width: 100%;
@@ -38,15 +40,18 @@ html {
   border-radius: 30px !important;
   overflow: hidden;
 }
+
 .icon img {
   height: 90px;
 }
+
 .icon p {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   position: relative;
   top: -10px;
 }
+
 .side-items ul li {
   width: 100%;
   height: 3.1rem;
@@ -56,31 +61,35 @@ html {
   gap: 10px;
   font-size: 1rem;
 }
+
 .side-items ul li a {
   gap: 10px;
   font-size: 1rem;
 }
+
 .side-items ul li.active {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    99deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0) 90%
-  );
+  background: linear-gradient(99deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 90%);
   border-left: 2px solid rgb(255, 255, 255);
   opacity: 1;
 }
+
 .side-log {
   height: 4rem;
 }
+
 .side-log:hover {
   background: rgba(255, 255, 255, 0.101);
   backdrop-filter: blur(200px);
 }
+
 .side-log-in-out {
   font-size: 1rem;
   gap: 8px;
 }
+
 .btn-custom:focus {
   outline: none;
   box-shadow: none;
@@ -94,36 +103,43 @@ html {
   overflow: hidden;
   border-radius: 30px !important;
 }
+
 .box {
   position: absolute;
   height: 100px;
   width: 100px;
 }
+
 .b1 {
   background-color: #2c4d57;
   top: 3%;
   left: 20%;
 }
+
 .b2 {
   background-color: blue;
   top: 4%;
   left: 19%;
 }
+
 .b3 {
   background-color: #3fa9c0;
   top: 30%;
   left: 10%;
 }
+
 .b4 {
   background-color: #00f3ff;
   top: 14%;
   left: 10%;
 }
+
 .b5 {
   background-color: orange;
   top: 43%;
   left: 15%;
 }
+
 .b6 {
   background-color: blue;
   top: 80%;
@@ -135,80 +151,95 @@ html {
 /* MAIN  */
 
 /* -- DASHBOARD MAIN -- */
-.tab{
+.tab {
   overflow: hidden;
 }
+
 .main {
   position: relative;
   height: 100vh;
   background-color: rgb(0, 0, 0);
 }
+
 .main-dashboard {
   height: 100%;
   position: relative;
 }
+
 .main-dashboard-header {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   width: 100%;
 }
+
 .dashboard-h {
   border-radius: 30px !important;
   height: 100%;
   width: 100%;
 }
+
 .dash {
   position: absolute;
   height: 80px;
   width: 90px;
   opacity: 0.7;
 }
+
 .d1 {
   background-color: #00c3ff;
   top: -2%;
   left: 1%;
 }
+
 .d2 {
   background-color: blue;
   top: 7%;
   left: 7%;
 }
+
 .d3 {
- background-color: #00ffff;
- top: -26%;
- left: 29%;
+  background-color: #00ffff;
+  top: -26%;
+  left: 29%;
 }
+
 .d4 {
   background-color: #f2ac2f;
   top: 5%;
   left: 14%;
 }
+
 .d5 {
   background-color: orange;
   top: -36%;
   left: 74%;
 }
+
 .d6 {
   background-color: blue;
   top: 11%;
   left: 88%;
 }
+
 .d7 {
   background-color: blue;
   top: 1%;
   left: 39%;
 }
+
 .d8 {
   background-color: #806532;
   top: 14%;
   left: 47%;
 }
+
 .d9 {
   background-color: #00dbff;
   top: 11%;
   left: 66%;
 }
+
 .main-dashboard-header-content {
   height: 100%;
   width: calc(100% + 2%);
@@ -217,15 +248,18 @@ html {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(100px);
 }
+
 .time {
   color: transparent;
   -webkit-text-stroke: 1px #ffffff;
 }
+
 .today {
   position: relative;
   top: -10px;
   left: 3px;
 }
+
 .dashboard-search-bar {
   background: rgba(0, 0, 0, 0.163);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -235,6 +269,7 @@ html {
   gap: 15px;
   width: 97%;
 }
+
 .dashboard-search {
   width: 90%;
   font-size: 1.5rem;
@@ -243,14 +278,17 @@ html {
   border: none;
   background: none;
 }
+
 .greet {
   top: -10px;
   gap: 5px;
   font-family: "Montserrat", sans-serif;
 }
+
 .greet-img {
   position: relative;
 }
+
 .greet-img img {
   display: none;
 }
@@ -262,42 +300,51 @@ html {
   border-radius: 30px;
   overflow: hidden;
 }
+
 .bg-winfocard {
   border-radius: 30px !important;
   height: 100%;
   width: 100%;
   position: absolute;
 }
+
 .winfo-box {
   position: absolute;
   height: 100px;
   width: 100px;
 }
+
 .wi1 {
   background-color: #2c4d57;
   top: -3%;
   left: 2%;
 }
+
 .wi2 {
   background-color: blue;
   top: 26%;
-  left: 3%;;
+  left: 3%;
+  ;
 }
+
 .wi3 {
   background-color: #3fa9c0;
   top: 20%;
   left: 30%;
 }
+
 .wi4 {
   background-color: #4d4a29;
   top: 53%;
   left: 42%;
 }
+
 .wi5 {
   background-color: orange;
   top: 28%;
   left: 60%;
 }
+
 /* .wi6 {
   background-color: blue;
   top: 59%;
@@ -305,23 +352,25 @@ html {
 } */
 .weather-info-card-content {
   height: 100%;
-  width:  100%;
+  width: 100%;
   position: relative;
   background: rgba(255, 255, 255, 0.163);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(100px);
   overflow: hidden;
 }
+
 .weather-info-card-ani iframe {
-    max-width: 100%;
-    height: auto;
-    border: none;
-    display: none; 
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: none;
 
 }
-.weather-info-card-temp{
-    font-size: 4rem;
-    width: auto;
+
+.weather-info-card-temp {
+  font-size: 4rem;
+  width: auto;
 }
 
 .weather-future {
@@ -330,199 +379,393 @@ html {
   position: relative;
   overflow: hidden;
 }
-.future-h{
+
+.future-h {
   height: 100%;
   width: 100%;
   position: absolute;
 }
-.future{
+
+.future {
   position: absolute;
   height: 100px;
   width: 100px;
   opacity: 0.7;
 }
+
 .f1 {
   background-color: #00c3ff;
   top: 0%;
   left: 0%;
 }
+
 .f2 {
   background-color: blue;
   top: 39%;
   left: 7%;
 }
+
 .f3 {
- background-color: #00ffff;
- top: 49%;
- left: 34%
+  background-color: #00ffff;
+  top: 49%;
+  left: 34%
 }
+
 .f4 {
   background-color: #f2ac2f;
   top: 13%;
   left: 14%
 }
+
 .f5 {
   background-color: orange;
   top: 24%;
   left: 82%;
 }
+
 .f6 {
   background-color: blue;
   top: 63%;
   left: 88%;
 }
+
 .f7 {
   background-color: blue;
   top: 7%;
   left: 51%;
 }
+
 .f8 {
   background-color: darkorchid;
   top: 49%;
   left: 55%;
 }
+
 .f9 {
   background-color: #00dbff;
   top: 46%;
   left: 74%;
 }
-.weather-future-content{
+
+.weather-future-content {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(100px);
-  overflow-x: auto; 
+  overflow-x: auto;
   white-space: nowrap;
 }
-.future-day{
-  background: rgba(0, 0, 0, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+.future-day {
+  background: rgba(0, 0, 0, 0.163);  
   backdrop-filter: blur(100px);
   border-radius: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.weather-custom-city{
-
+.wind-speed-meter{
+  height: 40vh; /*to change*/
   position: relative;
   overflow: hidden;
   border-radius: 30px;
 }
-.weather-custom-city-content{
+.meter-h {
   height: 100%;
-  width:  100%;
+  width: 100%;
+  position: absolute;
+}
+
+.meter {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.m1 {
+  background-color: #00c3ff;
+  top: 0%;
+  left: 0%;
+}
+
+.m2 {
+  background-color: blue;
+  top: 39%;
+  left: 7%;
+}
+
+.m3 {
+  background-color: #00ffff;
+  top: 49%;
+  left: 34%
+}
+
+.m4 {
+  background-color: #f2ac2f;
+  top: 13%;
+  left: 14%
+}
+
+.m5 {
+  background-color: orange;
+  top: 24%;
+  left: 82%;
+}
+
+.m6 {
+  background-color: blue;
+  top: 63%;
+  left: 88%;
+}
+
+.m7 {
+  background-color: blue;
+  top: 7%;
+  left: 51%;
+}
+
+.m8 {
+  background-color: darkorchid;
+  top: 49%;
+  left: 55%;
+}
+
+.m9 {
+  background-color: #00dbff;
+  top: 46%;
+  left: 74%;
+}
+
+.wind-speed-meter-content{
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.163);
+  backdrop-filter: blur(100px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sun-moon-rise{
+  height: 40vh; /*to change*/
   position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.rise-h {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.rise {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+.r1 {
+  background-color: #00c3ff;
+  top: 0%;
+  left: 0%;
+}
+
+.r2 {
+  background-color: blue;
+  top: 39%;
+  left: 7%;
+}
+
+.r3 {
+  background-color: #00ffff;
+  top: 49%;
+  left: 34%
+}
+
+.r4 {
+  background-color: #f2ac2f;
+  top: 13%;
+  left: 14%
+}
+
+.r5 {
+  background-color: orange;
+  top: 24%;
+  left: 82%;
+}
+
+.r6 {
+  background-color: blue;
+  top: 63%;
+  left: 88%;
+}
+
+.r7 {
+  background-color: blue;
+  top: 7%;
+  left: 51%;
+}
+
+.r8 {
+  background-color: darkorchid;
+  top: 49%;
+  left: 55%;
+}
+
+.r9 {
+  background-color: #00dbff;
+  top: 46%;
+  left: 74%;
+}
+
+.sun-moon-rise-content{
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.163);
+  backdrop-filter: blur(100px); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.weather-custom-city-forecast {
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  background: none;
+}
+
+.weather-custom-city-content {
+  height: 100%;
+  width: 100%;
   background: rgba(255, 255, 255, 0.163);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(100px);
   position: relative;
   z-index: 100;
 }
-.custom-h{
+
+.custom-h {
   height: 100%;
   width: 100%;
   position: absolute;
 }
-.custom{
+
+.custom {
   position: absolute;
   height: 100px;
   width: 100px;
-  z-index: 1 ;
+  z-index: 1;
 }
+
 .c1 {
   background-color: #00c3ff;
   top: 3%;
   left: 2%
 }
+
 .c2 {
   background-color: blue;
   top: 39%;
   left: 7%;
 }
+
 .c3 {
- background-color: #00ffff;
- top: 49%;
- left: 34%
+  background-color: #00ffff;
+  top: 49%;
+  left: 34%
 }
+
 .c4 {
   background-color: #f2ac2f;
   top: 13%;
   left: 14%
 }
+
 .c5 {
   background-color: orange;
   top: 24%;
   left: 82%;
 }
+
 .c6 {
   background-color: blue;
   top: 66%;
   left: 83%;
 }
+
 .c7 {
   background-color: blue;
   top: 15%;
   left: 44%;
 }
+
 .c8 {
   background-color: orange;
   top: 49%;
   left: 55%;
 }
+
 .c9 {
   background-color: #00dbff;
   top: 46%;
   left: 74%;
 }
-.custom-city-search{
+.custom-city-search-box{
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(400px);
+  border-radius: 30px;
+}
+
+.custom-city-search {
   width: 80%;
   font-size: 1rem;
   color: white;
   outline: none;
   border: none;
   background: none;
-  border-bottom: 1px solid white;
+ 
 }
 
-.weather-other-city{
+.weather-other-city {
   width: 100%;
   overflow-x: scroll;
   height: 35vh;
 }
 
-.weather-custom-city{
+.weather-custom-city {
   background: rgba(255, 255, 255, 0.07);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
   backdrop-filter: blur(400px);
   border-radius: 20px;
   position: relative;
 }
-.custom-temp{
+
+.custom-temp {
   position: relative;
-left: -20%;
+  left: -20%;
 }
 
 
@@ -556,10 +799,12 @@ left: -20%;
   height: 100%;
   background-color: rgb(255, 0, 0);
 }
+
 .main-calender {
   height: 100%;
   background-color: rgb(64, 0, 255);
 }
+
 .main-settings {
   height: 100%;
   background-color: rgb(136, 255, 0);

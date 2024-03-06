@@ -8,7 +8,7 @@
     height: 70px;
   }
   .tab{
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
