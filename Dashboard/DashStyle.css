@@ -35,7 +35,6 @@ html {
   position: relative;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   backdrop-filter: blur(100px);
   border-radius: 30px !important;
   overflow: hidden;
@@ -174,7 +173,7 @@ html {
   width: 100%;
 }
 
-#search-weather-input{
+#search-weather-input {
   border: none;
   background: none;
 }
@@ -251,7 +250,7 @@ html {
   width: calc(100% + 2%);
   position: relative;
   background: rgba(255, 255, 255, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
   backdrop-filter: blur(100px);
 }
 
@@ -268,7 +267,7 @@ html {
 
 .dashboard-search-bar {
   background: rgba(0, 0, 0, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
   backdrop-filter: blur(100px);
   border-radius: 40px;
   padding: 10px 15px;
@@ -361,7 +360,7 @@ html {
   width: 100%;
   position: relative;
   background: rgba(255, 255, 255, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
   backdrop-filter: blur(100px);
   overflow: hidden;
 }
@@ -377,6 +376,16 @@ html {
 .weather-info-card-temp {
   font-size: 4rem;
   width: auto;
+}
+
+
+.weather-future-content-date {
+  font-size: 3.9rem;
+  height: 4rem;
+}
+
+.weather-future-content-speed {
+  width: 9rem;
 }
 
 .weather-future {
@@ -461,18 +470,21 @@ html {
   overflow-x: auto;
   white-space: nowrap;
 }
+
 .future-day {
-  background: rgba(0, 0, 0, 0.163);  
+  background: rgba(0, 0, 0, 0.163);
   backdrop-filter: blur(100px);
   border-radius: 30px;
 }
 
-.wind-speed-meter{
-  height: 40vh; /*to change*/
+.wind-speed-meter {
+  height: 40vh;
+  /*to change*/
   position: relative;
   overflow: hidden;
   border-radius: 30px;
 }
+
 .meter-h {
   height: 100%;
   width: 100%;
@@ -539,11 +551,11 @@ html {
   left: 74%;
 }
 
-.wind-speed-meter-content{
+.wind-speed-meter-content {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.163);
-  backdrop-filter: blur(100px); 
+  backdrop-filter: blur(100px);
 }
 
 
@@ -557,12 +569,14 @@ html {
 
 
 
-.sun-moon-rise{
-  height: 40vh; /*to change*/
+.sun-moon-rise {
+  height: 40vh;
+  /*to change*/
   position: relative;
   overflow: hidden;
   border-radius: 30px;
 }
+
 .rise-h {
   height: 100%;
   width: 100%;
@@ -629,11 +643,11 @@ html {
   left: 74%;
 }
 
-.sun-moon-rise-content{
+.sun-moon-rise-content {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.163);
-  backdrop-filter: blur(100px); 
+  backdrop-filter: blur(100px);
 }
 
 
@@ -667,7 +681,7 @@ html {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.163);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  
   backdrop-filter: blur(100px);
   position: relative;
   z-index: 100;
@@ -739,7 +753,8 @@ html {
   top: 46%;
   left: 74%;
 }
-.custom-city-search-box{
+
+.custom-city-search-box {
   background: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(400px);
   border-radius: 30px;
@@ -752,7 +767,7 @@ html {
   outline: none;
   border: none;
   background: none;
- 
+
 }
 
 .weather-other-city {
@@ -763,7 +778,7 @@ html {
 
 .weather-custom-city {
   background: rgba(255, 255, 255, 0.07);
-  
+
   backdrop-filter: blur(400px);
   border-radius: 20px;
   position: relative;

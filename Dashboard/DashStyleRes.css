@@ -61,7 +61,8 @@
     padding-left: 2rem;
   }
   .weather-future-content-in{
-    margin-left: 35rem;
+    margin-left: 35.8rem;
+    margin-right: 0.5rem;
   }
   .future-day {
     min-width: auto;
@@ -91,7 +92,7 @@
     font-size: 14px !important;
   }
   .main-hum-speed-show img{
-    height: 36px;
+    height: 30px;
   }
 
 }
