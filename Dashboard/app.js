@@ -183,3 +183,40 @@ if (currentTime >= 6 && currentTime < 18) {
     frame.style.display = "block";
   });
 }
+
+
+// window.addEventListener('load', () => {
+//   const apiKey = '5011ce3a9e2ec87d56592fa5442d01ff'; // Replace with your actual API key
+//   const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=India&appid=' + apiKey;
+
+//   fetch(apiUrl)
+//     .then(response => response.json())
+//     .then(data => {
+//       console.log(data); // Check the console to see the fetched data structure
+
+//       // Update city name
+//       const cityNameElement = document.querySelector('.city-name');
+//       cityNameElement.textContent = data.name;
+
+//       // Update temperature
+//       const temperatureElement = document.querySelector('.weather-info-card-temp');
+//       temperatureElement.textContent = Math.round(data.main.temp - 273.15) + '°C';
+
+//       // Update wind speed
+//       const windSpeedElement = document.querySelector('.wind-speed');
+//       windSpeedElement.textContent = data.wind.speed + ' m/s';
+
+//       // Update humidity
+//       const humidityElement = document.querySelector('.Humidity-speed');
+//       humidityElement.textContent = data.main.humidity + '%';
+//     })
+//     .catch(error => {
+//       console.error('Error fetching weather data:', error);
+//     });
+// });
+
+
+
+
+
+

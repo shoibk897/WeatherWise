@@ -46,6 +46,7 @@
   }
   .greet{
     margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
   .greet-txt{
     font-size: 1.05rem !important;
@@ -83,4 +84,14 @@
   .sun-moon-rise{
     margin-top: 1rem;
   }
+  .main-wind-speed-show img{
+    height: 30px;
+  }
+  .main-wind-speed-show div div,.main-hum-speed-show div div{
+    font-size: 14px !important;
+  }
+  .main-hum-speed-show img{
+    height: 36px;
+  }
+
 }
