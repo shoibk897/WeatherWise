@@ -34,7 +34,7 @@ html {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.163);
+  background: rgba(96, 96, 96, 0.163);
   backdrop-filter: blur(100px);
   border-radius: 30px !important;
   overflow: hidden;
@@ -249,7 +249,7 @@ html {
   height: 100%;
   width: calc(100% + 2%);
   position: relative;
-  background: rgba(255, 255, 255, 0.163);
+  background: rgba(127, 127, 127, 0.163);
   
   backdrop-filter: blur(100px);
 }
@@ -266,7 +266,7 @@ html {
 }
 
 .dashboard-search-bar {
-  background: rgba(0, 0, 0, 0.163);
+  background: rgba(167, 167, 167, 0.163);
   
   backdrop-filter: blur(100px);
   border-radius: 40px;
@@ -359,7 +359,7 @@ html {
   height: 100%;
   width: 100%;
   position: relative;
-  background: rgba(255, 255, 255, 0.163);
+  background: rgba(115, 115, 115, 0.163);
   
   backdrop-filter: blur(100px);
   overflow: hidden;
@@ -465,209 +465,25 @@ html {
 .weather-future-content {
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.163);
+  background: rgba(118, 118, 118, 0.163);
   backdrop-filter: blur(100px);
   overflow-x: auto;
   white-space: nowrap;
 }
 
 .future-day {
-  background: rgba(0, 0, 0, 0.163);
+  background: rgba(124, 124, 124, 0.163);
   backdrop-filter: blur(100px);
   border-radius: 30px;
 }
 
-.wind-speed-meter {
+iframe {
+  border-radius: 30px;
   height: 40vh;
-  /*to change*/
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-}
-
-.meter-h {
-  height: 100%;
   width: 100%;
-  position: absolute;
+  border: none;
+  filter: invert(100%);
 }
-
-.meter {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-}
-
-.m1 {
-  background-color: #00c3ff;
-  top: 0%;
-  left: 0%;
-}
-
-.m2 {
-  background-color: blue;
-  top: 39%;
-  left: 7%;
-}
-
-.m3 {
-  background-color: #00ffff;
-  top: 49%;
-  left: 34%
-}
-
-.m4 {
-  background-color: #f2ac2f;
-  top: 13%;
-  left: 14%
-}
-
-.m5 {
-  background-color: orange;
-  top: 24%;
-  left: 82%;
-}
-
-.m6 {
-  background-color: blue;
-  top: 63%;
-  left: 88%;
-}
-
-.m7 {
-  background-color: blue;
-  top: 7%;
-  left: 51%;
-}
-
-.m8 {
-  background-color: darkorchid;
-  top: 49%;
-  left: 55%;
-}
-
-.m9 {
-  background-color: #00dbff;
-  top: 46%;
-  left: 74%;
-}
-
-.wind-speed-meter-content {
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.163);
-  backdrop-filter: blur(100px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.sun-moon-rise {
-  height: 40vh;
-  /*to change*/
-  position: relative;
-  overflow: hidden;
-  border-radius: 30px;
-}
-
-.rise-h {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.rise {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-}
-
-.r1 {
-  background-color: #00c3ff;
-  top: 0%;
-  left: 0%;
-}
-
-.r2 {
-  background-color: blue;
-  top: 39%;
-  left: 7%;
-}
-
-.r3 {
-  background-color: #00ffff;
-  top: 49%;
-  left: 34%
-}
-
-.r4 {
-  background-color: #f2ac2f;
-  top: 13%;
-  left: 14%
-}
-
-.r5 {
-  background-color: orange;
-  top: 24%;
-  left: 82%;
-}
-
-.r6 {
-  background-color: blue;
-  top: 63%;
-  left: 88%;
-}
-
-.r7 {
-  background-color: blue;
-  top: 7%;
-  left: 51%;
-}
-
-.r8 {
-  background-color: darkorchid;
-  top: 49%;
-  left: 55%;
-}
-
-.r9 {
-  background-color: #00dbff;
-  top: 46%;
-  left: 74%;
-}
-
-.sun-moon-rise-content {
-  height: 100%;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.163);
-  backdrop-filter: blur(100px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .weather-custom-city-forecast {
 
@@ -680,7 +496,7 @@ html {
 .weather-custom-city-content {
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.163);
+  background: rgba(102, 102, 102, 0.163);
   
   backdrop-filter: blur(100px);
   position: relative;
@@ -801,43 +617,3 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-map {
-  height: 100%;
-  background-color: rgb(255, 0, 0);
-}
-
-.main-calender {
-  height: 100%;
-  background-color: rgb(64, 0, 255);
-}
-
-.main-settings {
-  height: 100%;
-  background-color: rgb(136, 255, 0);
-}
