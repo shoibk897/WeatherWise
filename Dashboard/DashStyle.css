@@ -759,10 +759,21 @@ html {
   backdrop-filter: blur(400px);
   border-radius: 30px;
 }
+.remove-custom-city{
+  border: none;
+  background: none;
+  position: relative;
+  margin: 10px;
+  top: -25px;
 
+}
+#custom-btn{
+  border: none;
+  background:none;
+}
 .custom-city-search {
   width: 80%;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: white;
   outline: none;
   border: none;
@@ -774,11 +785,11 @@ html {
   width: 100%;
   overflow-x: scroll;
   height: 35vh;
+  border-radius: 25px;
 }
 
 .weather-custom-city {
   background: rgba(255, 255, 255, 0.07);
-
   backdrop-filter: blur(400px);
   border-radius: 20px;
   position: relative;

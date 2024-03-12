@@ -71,10 +71,10 @@
     left: -5%;
   }
   .custom-wind{
-    font-size: 10px;
+    font-size: 12px;
   }
   .custom-hum{
-    font-size: 10px;
+    font-size: 12px;
   }
   .custom-hum img,.custom-wind img{
     height: 15px;
@@ -94,5 +94,13 @@
   .main-hum-speed-show img{
     height: 30px;
   }
-
+  #remove-custome-city{
+    margin: 0px;
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+  .remove-custom-city{
+    top: -19px;
+    left: 5px;
+  }
 }
