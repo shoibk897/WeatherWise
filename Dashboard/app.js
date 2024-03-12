@@ -108,24 +108,23 @@ function updateDateInfo() {
     .querySelectorAll(".year")
     .forEach((elem) => (elem.textContent = year));
 
-  document
-    .querySelectorAll(".date-one")
-    .forEach((elem) => (elem.textContent = date + 1));
-  document
-    .querySelectorAll(".date-two")
-    .forEach((elem) => (elem.textContent = date + 2));
-  document
-    .querySelectorAll(".date-three")
-    .forEach((elem) => (elem.textContent = date + 3));
-  document
-    .querySelectorAll(".date-four")
-    .forEach((elem) => (elem.textContent = date + 4));
-  document
-    .querySelectorAll(".date-five")
-    .forEach((elem) => (elem.textContent = date + 5));
-  document
-    .querySelectorAll(".date-six")
-    .forEach((elem) => (elem.textContent = date + 6));
+    for (let i = 1; i <= 5; i++) {
+      let nextDate = new Date(now);
+      nextDate.setDate(now.getDate() + i);
+      let nextWeekday = weekdays[nextDate.getDay()];
+      let nextDateVal = nextDate.getDate();
+      let nextMonth = months[nextDate.getMonth()];
+  
+      document
+        .querySelectorAll(".weekday-" + i)
+        .forEach((elem) => (elem.textContent = nextWeekday));
+      document
+        .querySelectorAll(".date-" + i)
+        .forEach((elem) => (elem.textContent = nextDateVal));
+      document
+        .querySelectorAll(".month-" + i)
+        .forEach((elem) => (elem.textContent = nextMonth));
+    }
 }
 
 updateDateInfo();

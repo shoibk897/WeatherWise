@@ -16,7 +16,7 @@
 
 <body>
     <!-- PAGE INTRO FOR WEATHER FORE CASTING  -->
-        <section class="intro-animation container-fluid d-flex justify-content-center align-items-center ">
+    <section class="intro-animation container-fluid d-flex justify-content-center align-items-center overflow-hidden ">
             <div class="intro-box container text-light d-flex justify-content-center align-items-center ">
                 <span class="intro-logo fs-1">Weather</span>
                 <span class="intro-logo fs-1">Wise.</span>
@@ -24,7 +24,7 @@
         </section>
 
     <!-- START OF THE MAIN PAGE -->
-    <section class="mainPage container-fluid text-light d-flex flex-column align-items-center">
+    <section class="mainPage container-fluid text-light d-flex flex-column align-items-center overflow-hidden">
         <div class="main pt-1 ps-2 pe-2 ">
             <nav class="navbar navbar-expand ">
                 <div class="container-fluid">
@@ -35,14 +35,36 @@
                     <div class="itemsNav d-lg-flex align-items-center  d-none">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 me">
                             <li class="nav-item">
-                                <a class="feedback nav-link active fs-5 text-light " aria-current="page" href="#">Feedback</a>
+                                <a class="feedback nav-link active fs-5 text-light " aria-current="page"
+                                    href="#">Feedback</a>
                             </li>
                         </ul>
-                        <a href="Dashboard/dashboard.html" class=" btn btn-outline-dark rounded-pill fs-5 " type="submit">DashBoard</a>
+                        <a href="Dashboard/dashboard.html" class=" btn btn-outline-dark rounded-pill fs-5 "
+                            type="submit">DashBoard</a>
                     </div>
                 </div>
             </nav>
-            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="tag-line">
+                            <h1 class="main-line filled-t fw-bold">Ignite Your Weather Journey Where Every Forecast Sparks Adventure!</h1>
+                            <h1 class="main-line outline-t fw-bold">Ignite Your Weather Journey Where Every Forecast Sparks Adventure!</h1>
+                            <span id="circle"></span>
+                            <div><a href="Dashboard/dashboard.html" class="mobile-dashboard d-none btn btn-outline-dark rounded-pill fs-5 "
+                                type="submit">DashBoard</a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="main-img container-fluid d-flex justify-content-center align-items-center">
+                            <img src="icons/mainWeather.svg" height="540px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-rights container-fluid d-flex align-items-center justify-content-center">
+                <p>&copy; <span id="year"></span> WeatherWise. </p>
+            </div>
         </div>
     </section>
 

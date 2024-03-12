@@ -27,3 +27,16 @@ window.addEventListener('DOMContentLoaded', () => {
         },2300);
     })
 });
+
+
+document.addEventListener("mousemove", (e) => {
+    const circle = document.getElementById("circle");
+    const circleSize = circle.offsetWidth; 
+    const mouse_x = e.clientX;
+    const mouse_y = e.clientY;
+    circle.style.left = `${mouse_x - circleSize}px`; 
+    circle.style.top = `${mouse_y - circleSize}px`; 
+});
+
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
