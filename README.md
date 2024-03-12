@@ -4,7 +4,7 @@ WeatherWise is a weather forecast project developed by a team of students for th
 ## Team Members
 - **Shoib khan**
 - **Sourav Verma** 
-- **Shashi **
+- **Shashi**
 
 
 ## Features
