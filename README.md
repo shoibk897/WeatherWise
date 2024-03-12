@@ -1,6 +1,8 @@
 # WeatherWise
 WeatherWise is a weather forecast project developed by a team of students for their project . It aims to provide users with accurate weather forecasts using HTML, CSS, and JavaScript.
 
+**Live view - https://weather-wise-rho.vercel.app/**
+
 ## Team Members
 - **Shoib khan**
 - **Sourav Verma** 
