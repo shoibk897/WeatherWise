@@ -1,3 +1,20 @@
+/* FOR TABLETs */
+
+@media (max-width: 980px) {
+  .weather-info-card-temp{
+    font-size: 2.8rem;
+  }
+  .weather-info-card-temp-img{
+    height: 70px;
+  }
+  .tab{
+    overflow-y: scroll;
+  }
+}
+
+
+/* FOR MOBILE PHONES */
+
 @media (max-width: 768px) {
   .background {
     width: 8vh;
@@ -25,14 +42,65 @@
   }
   .dashboard-search-bar{
     width: 100%;
+    border-radius: 20px;
   }
   .greet{
     margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
   .greet-txt{
     font-size: 1.05rem !important;
   }
-  .greet-user{
-    font-size: 1.1rem !important;
+  .weather-info-card-temp{
+    font-size: 2.8rem;
+  }
+  .tab{
+    overflow-y: scroll;
+  }
+  .weather-future{
+    padding-left: 2rem;
+  }
+  .weather-future-content-in{
+    margin-left: 35.8rem;
+    margin-right: 0.5rem;
+  }
+  .future-day {
+    min-width: auto;
+  }
+  .custom-temp{
+    left: -5%;
+  }
+  .custom-wind{
+    font-size: 12px;
+  }
+  .custom-hum{
+    font-size: 12px;
+  }
+  .custom-hum img,.custom-wind img{
+    height: 15px;
+  }
+  .custom-city-img img{
+    height: 50px;
+  }
+  .sun-moon-rise{
+    margin-top: 1rem;
+  }
+  .main-wind-speed-show img{
+    height: 30px;
+  }
+  .main-wind-speed-show div div,.main-hum-speed-show div div{
+    font-size: 14px !important;
+  }
+  .main-hum-speed-show img{
+    height: 30px;
+  }
+  #remove-custome-city{
+    margin: 0px;
+    padding-right: 2px;
+    padding-top: 5px;
+  }
+  .remove-custom-city{
+    top: -19px;
+    left: 5px;
   }
 }

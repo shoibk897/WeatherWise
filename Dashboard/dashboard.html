@@ -20,8 +20,8 @@
         <div class="row">
 
             <!-- SIDEBAR -->
-            <div class="side-bar col-3 col-lg-2 pt-2 pb-2">
-                <div class="background">
+            <div class="side-bar col-3 col-lg-2 pt-2  pb-3">
+                <div class=" background   rounded-2">
                     <span class="box b1"></span>
                     <span class="box b2"></span>
                     <span class="box b3"></span>
@@ -30,7 +30,7 @@
                     <span class="box b6"></span>
                 </div>
 
-                <div class="side-bar-main container-fluid p-0 rounded-2 d-flex flex-column align-items-center ">
+                <div class="side-bar-main container-fluid p-0 rounded-2 d-flex flex-column align-items-center mt-1 ">
                     <!-- # ICON WeatherWise. -->
                     <div class="icon mt-3 mb-4 d-flex flex-column align-items-center">
                         <img src="icons/logo.png" alt="icon">
@@ -46,26 +46,8 @@
                                 <li id="tab1" onclick="openTab('main-dashboard')"
                                     class="d-flex justify-content-start align-items-center">
                                     <img src="icons/dashboardicon.svg" height="25px" alt="dashboardicon">
-                                    <span class="d-none d-lg-inline-block d-md-inline-block">DashBoard</span>
-                                </li>
-                                <!-- 2.MAP -->
-                                <li id="tab2" onclick="openTab('main-map')"
-                                    class="d-flex justify-content-start align-items-center">
-                                    <img src="icons/mapIcon.svg" height="25px" alt="mapIcon">
-                                    <span class="d-none d-lg-inline-block d-md-inline-block">Map</span>
-                                </li>
-                                <!-- 3.CALENDER -->
-                                <li id="tab3" onclick="openTab('main-calender')"
-                                    class="d-flex justify-content-start align-items-center">
-                                    <img src="icons/calenderIcon.svg" height="25px" alt="calenderIcon">
-                                    <span class="d-none d-lg-inline-block d-md-inline-block">Calender</span>
-                                </li>
-                                <!-- 4.SETTINGS -->
-                                <li id="tab4" onclick="openTab('main-settings')"
-                                    class="d-flex justify-content-start align-items-center">
-                                    <img src="icons/settingsIcon.svg" height="25px" alt="settingsIcon">
-                                    <span class="d-none d-lg-inline-block d-md-inline-block">Settings</span>
-                                </li>
+                                    <span class="d-none d-lg-inline-block d-md-inline-block ">DashBoard</span>
+                                </li
                             </ul>
                         </div>
 
@@ -74,8 +56,9 @@
                             class=" side-log container-fluid p-0  d-flex flex-column align-items-center justify-content-center">
                             <button type="button"
                                 class="side-log-in-out btn btn-custom  ps-lg-0 ps-md-0 d-flex justify-content-center align-items-center">
-                                <img src="icons/logOutIcon.svg" height="30px" alt="logInOutIcon">
-                                <span class="d-none d-lg-inline-block d-md-inline-block">DashBoard</span>
+                                <a href="/main.html"> <img src="icons/logOutIcon.svg" height="30px" alt="logInOutIcon"></a>
+                                <a href="/main.html"
+                                    class="d-none d-lg-inline-block text-light d-md-inline-block">LogOut</a>
                             </button>
                         </div>
                     </div>
@@ -86,61 +69,248 @@
 
 
             <!-- DASHBOARD - MAIN -->
-            <div class="main col-9 col-lg-10 ps-0 pe-1 pt-2 pb-2">
-                <!-- DASHBOARD -->
-                <div class="tab main-dashboard container-fluid ms-0 me-0 ps-1 pe-1 ">
-
+            <div class="main col-9 col-lg-10 ps-0 pe-2 pt-2 pb-3">
+                <!-- DASHBOARD TAB -->
+                <div class="tab main-dashboard container-fluid overflow-md-scroll ms-0 me-1 ps-1 pe-1 mt-1 ">
+                    <!-- Dashboard header -->
                     <div class="main-dashboard-header p-0">
-                        <div class="dashboard m-0 p-0">
+                        <!-- Header background -->
+                        <div class="dashboard-h m-0 p-0">
                             <span class="dash d1"></span>
                             <span class="dash d2"></span>
                             <span class="dash d3"></span>
                             <span class="dash d4"></span>
                             <span class="dash d5"></span>
                             <span class="dash d6"></span>
+                            <span class="dash d7"></span>
+                            <span class="dash d8"></span>
+                            <span class="dash d9"></span>
                         </div>
+                        <!-- Header content -->
                         <div class="row main-dashboard-header-content ps-4 pe-3 pt-lg-1 pb-lg-1 ">
                             <div class="main-time-date col-lg-6">
-                                <p id="current-time" class="time m-0 fs-1 ">Time</p>
+                                <p class="time current-time m-0 fs-1 ">Time</p>
                                 <div class="today d-flex" style="gap: 8px;">
-                                    <div id="week">week</div>,
-                                    <div id="date">date </div>
-                                    <div id="month">Month</div>
-                                    <div id="year">Year</div>
+                                    <div class="weekday">week</div>,
+                                    <div class="date">date </div>
+                                    <div class="month">Month</div>
+                                    <div class="year">Year</div>
                                 </div>
                             </div>
-                            <div class="main-dashboard-search col-lg-6 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
+                            <div
+                                class="main-dashboard-search col-lg-6 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                                 <div class="dashboard-search-bar  d-flex align-items-center justify-content-start ">
-                                    <img src="icons/search.svg" height="28px" alt="">
-                                    <input class="dashboard-search" type="text" name="" id="weather-search">
+                                    <button id="search-weather-input" type="submit"><img src="icons/search.svg"
+                                            height="28px" alt=""></button>
+                                    <input id="search-weather" class="dashboard-search" type="text" name="">
                                 </div>
                             </div>
 
-                            <div class="greet d-flex align-items-center justify-content-start pb-2 mb-md-1">
+                            <div class="greet d-flex align-items-center justify-content-start position-relative ">
                                 <div class="greet-img">
                                     <img src="icons/sun.svg" height="30px" alt="">
+                                    <img src="icons/afternoon.svg" height="30px" alt="">
                                     <img src="icons/evening.svg" height="30px" alt="">
                                     <img src="icons/moon.svg" height="25px" alt="">
                                 </div>
-                                <div class="greet-txt fs-5">Good Morning</div>
-                                <div class="greet-user fs-5">YourName</div>
+                                <div class="greet-txt fs-5"> Greetings</div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Dashboard main -->
+                    <div class="main-dashboard-content p-0 ">
+                        <div class="row">
+                            <div class="col-lg-4 mt-2 pt-1 ">
+                                <div class="weather-info-card">
+                                    <div class="bg-winfocard">
+                                        <span class="winfo-box wi1"></span>
+                                        <span class="winfo-box wi2"></span>
+                                        <span class="winfo-box wi3"></span>
+                                        <span class="winfo-box wi4"></span>
+                                        <span class="winfo-box wi5"></span>
+                                        <span class="winfo-box wi6"></span>
+                                    </div>
+                                    <div class="weather-info-card-content">
+                                        <div
+                                            class="weather-info-location container-fluid d-flex justify-content-start align-items-center pt-3 ">
+                                            <img src="icons/location.svg" height="25px" alt="">
+                                            <div class="city-name container-fluid fs-4 p-0 ps-2">India</div>
+                                        </div>
+                                        <hr class="m-2 mt-3 ms-4 me-4 mb-1">
+                                        <div
+                                            class="weather-info-card-ani d-flex align-items-center justify-content-center gap-4 pt-1">
+                                            <div class=" p-0">
+                                                <img src="icons/weather_info_ani.gif"
+                                                    class="weather-info-day weather-info-card-temp-img" height="80px"
+                                                    alt="">
+                                                <img src="icons/weather_info_ani2.gif"
+                                                    class="weather-info-night weather-info-card-temp-img" height="80px"
+                                                    alt="">
+                                            </div>
+                                            <div class="weather-info-card-temp p-0 ">27</div>
+                                        </div>
+                                        <hr class="m-2 mb-3 ms-4 me-4 mt-1">
+                                        <div
+                                            class="mb-3 contianer-fluid p-0 d-flex align-items-center justify-content-center pe-3   gap-4 ">
+                                            <div
+                                                class="main-wind-speed-show ps-1 ms-2 d-flex justify-content-center align-items-center gap-2">
+                                                <img src="icons/wind.svg" height="50px" alt="">
+                                                <div>
+                                                    <div class="wind-speed fs-4"> 28</div>
+                                                    <div class="fs-6">Wind</div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="main-hum-speed-show ps-1 ms-2 d-flex justify-content-start align-items-center gap-2 mt-2">
+                                                <img src="icons/humidity.svg" height="56px" alt="">
+                                                <div>
+                                                    <div class="humidity-speed fs-4">28%</div>
+                                                    <div class="fs-6">Humidity</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mt-2 pt-1 ps-md-0 ms-0">
+                                <div class="weather-future container-fluid p-0 m-0">
+                                    <div class="future-h m-0 p-0">
+                                        <span class="future f1"></span>
+                                        <span class="future f2"></span>
+                                        <span class="future f3"></span>
+                                        <span class="future f4"></span>
+                                        <span class="future f5"></span>
+                                        <span class="future f6"></span>
+                                        <span class="future f7"></span>
+                                        <span class="future f8"></span>
+                                        <span class="future f9"></span>
+                                    </div>
+
+                                    <div class="weather-future-content d-flex justify-content-center align-items-center container-fluid p-0  ">
+                                        <div class="weather-future-content-in d-flex align-items-center justify-content-center gap-2 pt-2  pb-2">
+                                            <div id="forecast-card-0" class="future-day  pt-2 pb-3 p-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="weather-future-content-date date-1 d-flex align-items-center justify-content-center"></div>
+                                                    <div class="weather-future-content-month month-1 d-flex align-items-center justify-content-center fs-5"></div>
+                                                    <div class="weather-future-content-week weekday-1 d-flex align-items-center justify-content-center fs-6"></div>
+                                                </div>
+                                                <div class="forecast-card-temp fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="weather-future-content-speed">
+                                                        <div><span class="d-flex align-items-center justify-content-around">Wind<span class="forecast-card-wind">24 km/h</span></span></div>
+                                                        <div><span class="d-flex align-items-center justify-content-around">Humidity <span class="forecast-card-hum">34%</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="forecast-card-1" class="future-day  pt-2 pb-3 p-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="weather-future-content-date date-2 d-flex align-items-center justify-content-center"></div>
+                                                    <div class="weather-future-content-month month-2 d-flex align-items-center justify-content-center fs-5"></div>
+                                                    <div class="weather-future-content-week weekday-2 d-flex align-items-center justify-content-center fs-6"></div>
+                                                </div>
+                                                <div class="forecast-card-temp fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">
+                                                    <div class="weather-future-content-speed">
+                                                        <div><span class="d-flex align-items-center justify-content-around">Wind<span class="forecast-card-wind">24 km/h</span></span></div>
+                                                        <div><span class="d-flex align-items-center justify-content-around">Humidity <span class="forecast-card-hum">34%</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="forecast-card-2" class="future-day  pt-2 pb-3 p-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="weather-future-content-date date-3 d-flex align-items-center justify-content-center"></div>
+                                                    <div class="weather-future-content-month month-3 d-flex align-items-center justify-content-center fs-5"></div>
+                                                    <div class="weather-future-content-week weekday-3 d-flex align-items-center justify-content-center fs-6"></div>
+                                                </div>
+                                                <div class="forecast-card-temp fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">                                                   
+                                                    <div class="weather-future-content-speed">
+                                                        <div><span class="d-flex align-items-center justify-content-around">Wind<span class="forecast-card-wind">24 km/h</span></span></div>
+                                                        <div><span class="d-flex align-items-center justify-content-around">Humidity <span class="forecast-card-hum">34%</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="forecast-card-3" class="future-day  pt-2 pb-3 p-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="weather-future-content-date date-4 d-flex align-items-center justify-content-center"></div>
+                                                    <div class="weather-future-content-month month-4 d-flex align-items-center justify-content-center fs-5"></div>
+                                                    <div class="weather-future-content-week weekday-4 d-flex align-items-center justify-content-center fs-6"></div>
+                                                </div>
+                                                <div class="forecast-card-temp fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">                                                    
+                                                    <div class="weather-future-content-speed">
+                                                        <div><span class="d-flex align-items-center justify-content-around">Wind<span class="forecast-card-wind">24 km/h</span></span></div>
+                                                        <div><span class="d-flex align-items-center justify-content-around">Humidity <span class="forecast-card-hum">34%</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="forecast-card-4" class="future-day  pt-2 pb-3 p-2 d-flex flex-column gap-1 align-items-center justify-content-between">
+                                                <div>
+                                                    <div class="weather-future-content-date date-5 d-flex align-items-center justify-content-center"></div>
+                                                    <div class="weather-future-content-month month-5 d-flex align-items-center justify-content-center fs-5"></div>
+                                                    <div class="weather-future-content-week weekday-5 d-flex align-items-center justify-content-center fs-6"></div>
+                                                </div>
+                                                <div class="forecast-card-temp fs-1">28<span>°C</span></div>
+                                                <div class="d-flex align-items-center justify-content-center gap-2">                                                  
+                                                    <div class="weather-future-content-speed">
+                                                        <div><span class="d-flex align-items-center justify-content-around">Wind<span class="forecast-card-wind">24 km/h</span></span></div>
+                                                        <div><span class="d-flex align-items-center justify-content-around">Humidity <span class="forecast-card-hum">34%</span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 mt-2 pt-1 pe-0 ">
+                                <div class="container-fluid wind-speed-meter p-0">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1754008.4185856436!2d75.75056262474297!3d30.83633439416077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391964aa569e7355%3A0x8fbd263103a38861!2sPunjab!5e0!3m2!1sen!2sin!4v1710247167874!5m2!1sen!2sin" width="100" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-2 pt-1">
+                                <div class="weather-custom-city-forecast contianer-fluid p-0">
+                                    <div class="custom-h m-0 p-0">
+                                        <span class="custom c1"></span>
+                                        <span class="custom c2"></span>
+                                        <span class="custom c3"></span>
+                                        <span class="custom c4"></span>
+                                        <span class="custom c5"></span>
+                                        <span class="custom c6"></span>
+                                        <span class="custom c7"></span>
+                                        <span class="custom c8"></span>
+                                        <span class="custom c9"></span>
+                                    </div>
+                                    <div class="weather-custom-city-content p-3">
+                                        <div class="custom-city-search-box container-fluid p-2 ps-2 d-flex align-items-center  gap-3">
+                                            <button id="custom-btn"><img class="custome-btn-search " src="icons/search.svg" height="30px"></button>
+                                            <input type="text" class="custom-city-search" placeholder="">
+                                        </div>
+                                        <div  id="weather-custom-city" class="weather-other-city container-fluid p-0 pt-2 mt-2 ">
+                                            <!-- CUSTOM CITY WILL APEAR HERE -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- DASHBOARD TAB END -->
                 </div>
-                <!-- DASHBOARD END -->
-                <div class="tab main-map container-fluid"></div>
-                <div class="tab main-calender container-fluid"></div>
-                <div class="tab main-settings container-fluid"></div>
+
+                <!-- DASHBOARD - MAIN -->
+
             </div>
-            <!-- DASHBOARD - MAIN -->
-
         </div>
-    </div>
 
 
-    <script src="app.js"></script>
+        <script src="app.js"></script>
+        <script src="weatherApi.js"></script>
 </body>
 
 </html>
