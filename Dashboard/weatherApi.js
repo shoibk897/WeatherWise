@@ -82,9 +82,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
         }
     });
-    
-    let arr = [1,2,3,4];
-    arr.forEach()
 
     const addCustomWeatherCard = (cityName, temperature, windSpeed, humidity) => {
         const weatherTemplate = `
